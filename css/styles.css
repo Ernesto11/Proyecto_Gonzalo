@@ -9,6 +9,8 @@
     --black2: #30353B;
     --shadow: 0 8px 8px;
     --color_shadow: #00000033;
+    --blue_company: #174e7d;
+    --orange_company: #ca6702; 
 }
 
 *{
@@ -37,7 +39,7 @@ body{
 .hero{
     width: 100%;
     min-height: 100vh;
-    background:  #174e7d ;
+    background: var(--blue_company)  ;
 }
 
 .nav__hero{
@@ -69,7 +71,7 @@ body{
 
 .link{
     display: inline-block;
-    color: #174e7d;
+    color: var(--blue_company) ;
     text-decoration: none;
     font-weight: 250;
     padding: 10px;
@@ -82,7 +84,7 @@ body{
 }
 
 .point{
-    color: #ca6702;
+    color: var(--orange_company);
 }
 
 .hero__main{
@@ -144,7 +146,7 @@ body{
 
 .subtitle{
     font-size: 38px;
-    color: #174e7d;
+    color: var(--blue_company) ;
 }
 
 .subtitle--modifier{
@@ -175,7 +177,7 @@ body{
     width: 30%;
     padding: 30px 0;
     overflow: hidden;
-    background: #174e7d;
+    background: var(--blue_company) ;
     border-radius: 10px;
     position: relative;
     text-align: right;
@@ -204,11 +206,20 @@ body{
     text-align: center;
 }
 
+.card__list__company{
+    color: #fff;
+    font-weight: 700;
+    margin: 25px 0 12px ;
+    font-size: 18px;
+    text-align: justify;
+}
+
 
 .card__title{
     font-size: 40px;
-    color: #fff;
+    color: var(--orange_company);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .card__copy{
@@ -823,10 +834,39 @@ body{
 
 /*--- Carousel ------ */
 
+
+
 .carousel__contenedor {
     position: relative;
 }
 
+.carousel__imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.title__image{
+    color: var(--blue_company);
+    font-weight: 700;
+    margin: 25px 0 12px ;
+    font-size: 18px;
+    text-align: center;
+}
+
+.carousel__elemento{
+    text-align: justify;
+}
+
+
+.desc__image{
+    color: var(--black2);
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 32px;
+    text-align: justify;
+}
 
 .carousel__siguiente {
     position: absolute;
@@ -840,7 +880,7 @@ body{
     text-align: center;
     background: none;
     color: #fff;
-    opacity: 20%;
+    opacity: 0%;
 }
 
 .carousel__anterior {
@@ -855,12 +895,12 @@ body{
     text-align: center;
     background: none;
     color: #fff;
-    opacity: 20%;
+    opacity: 0%;
 }
 
 .carousel__anterior:hover,
 .carousel__siguiente:hover{
-    opacity: 100%;
+    opacity: 0%;
 }
 
 

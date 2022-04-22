@@ -1,8 +1,9 @@
 
 window.addEventListener('load',function(){
     new Glider(document.querySelector('.carousel__lista'),{
-        slidesToShow:1,
-        slidesToScroll:1,
+        slidesToShow:4,
+        slidesToScroll:4,
+        draggable: true,
         type:'slider',
         autoplay:1000,
         dots:'.carousel__indicadores',
